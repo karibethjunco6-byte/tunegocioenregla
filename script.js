@@ -325,7 +325,7 @@ function renderizarRequisitosRubro() {
     contenedor.appendChild(tarjetaReq);
   }
 
-  const selectores = document.querySelectorAll(".selector-estado-req");
+   const selectores = document.querySelectorAll(".selector-estado-req");
   for (let j = 0; j < selectores.length; j = j + 1) {
     selectores[j].addEventListener("change", function (evento) {
       const idx = Number(evento.target.getAttribute("data-indice"));
@@ -336,7 +336,6 @@ function renderizarRequisitosRubro() {
     });
   }
 
-  evaluarSemaforoMype();
 }
 
 function evaluarSemaforoMype() {
